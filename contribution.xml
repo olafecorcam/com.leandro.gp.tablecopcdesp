@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdkExtension xmlns="http://www.sap.com/bi/zen/sdk" id="com.leandro.gp.tablecopcdesp"
+	title="TableCOPCDESP" version="1.0" vendor="Leandro">
+	<component id="TableCOPCDESP" title="TableCOPCDESP" icon="res/table.png"
+		handlerType="sapui5"
+		propertySheetPath="res/additional_properties_sheet/additional_properties_sheet.html"
+		databound="true">
+		<jsInclude>res/js/component.js</jsInclude>
+		<jsInclude>res/js/numeral.min.js</jsInclude>
+
+		<property id="onclick" type="ScriptText" title="On Change"
+			group="Events" />
+
+		<property id="tamanhoCols" type="String" title="Tamanho Colunas"
+			group="Events" />
+		<property id="topBT" type="String" title="Top Bottom or Top"
+			group="Events">
+			<possibleValue>TOP</possibleValue>
+			<possibleValue>BOTTOM</possibleValue>
+		</property>
+		<property id="linhasVisiveis" type="int" title="Num Linhas Visiveis"
+			group="Events" />
+
+		<property type="ResultSet" group="DataBinding" title="Data Set"
+			id="data"></property>
+
+		<initialization>
+			<defaultValue property="HEIGHT">25</defaultValue>
+			<defaultValue property="WIDTH">250</defaultValue>
+			<defaultValue property="topBT">BOTTOM</defaultValue>
+			<defaultValue property="linhasVisiveis">5</defaultValue>
+			<defaultValue property="tamanhoCols">20px;300px;100px;100px;100px;100px;100px
+			</defaultValue>
+
+
+
+			<!--
+				Example Properties <defaultValue property="title0">Open
+				Query</defaultValue> <defaultValue
+				property="icon0">data:image/gif;base64,R0lGODlhEAAPALMLAAAAAIAAAICAAI+n0dnu+f/wnr+/v2ZmZkBAQP////8AAAAAAAAAAAAAAAAAAAAAACH5BAEAAAsALAAAAAAQAA8AAARPcIFJq5Upa6I1wEQYDmJofEBSEmR5gmUrvgA73MOh7weqloeCUCjwrYLDQlFiwx0UUGjACEwqqSLkcFnD3Z5RxRSWtXIN6DRCwG6jLHBKBAA7</defaultValue>
+				<defaultValue property="title1">Variables</defaultValue>
+				<defaultValue
+				property="icon1">data:image/gif;base64,R0lGODlhEAAPAPf1AAAAAIAAAACAAICAAAAAgIAAgACAgICAgMDcwKbK8JkAAMQAJv9mZv+Zmf/MzFMAXYFUkKWGs9S+3gAoVgA9hFxqpo+SwMzM/wBBawBjpFmEvY+n0cbW8wAAiAAAqjOZ/47N8Nnu+SRNDDJsEU2mGYzAbLPTm0RZAF99AJLAALjSa9HfnFBQHmZmM5mZZszMmf//1nlwAKqdAOjSWP/rAP/wnm5HAJpkAP9mAP+ZAPezV//MM1Y1DW5KIKZ+Tsefbf/Mmebm5tnZ2b+/v6amppmZmYyMjGZmZkBAQG+MnP/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////78KCgpICAgP8AAAD/AP//AAAA//8A/wD//wAAACH5BAEAAP0ALAAAAAAQAA8AAAhzAAEIHEiwYD8ANBDSSEhDhsOHAJIglIEQgIyGDx1GVEjxIsaMGxda5JiRosSEFyl+hHhyocuXLjeKmElTBA0FOEVKFKGkZ08ROJMElVlzZpIkNxVI3Onz58KgCXcWtXkzptSiT5FGLciVYJJ+R8OKHZskIAA7</defaultValue>
+				<defaultValue property="title2">Toggle Filter Panel</defaultValue>
+				<defaultValue
+				property="icon2">data:image/gif;base64,R0lGODlhEAAPAPEAAMDAwADgAgcHBwAAACH5BAEAAAAALAAAAAAQAA8AAQIohI9pwu2+gpxUiljzxdkm0QXbpykHODUmNo6keK5oK1tqDa/nrfdAAQA7</defaultValue>
+			-->
+		</initialization>
+	</component>
+</sdkExtension>

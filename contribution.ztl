@@ -1,0 +1,13 @@
+class com.leandro.gp.tablecopcdesp.TableCOPCDESP extends Component {
+	/**
+	Used to get the Value selected on the component
+	
+	<returns>
+	The Value of selected
+	</returns>
+  	*/
+
+	void setTopBottom(String value){*
+		this.topBT = value;
+	*}
+}
